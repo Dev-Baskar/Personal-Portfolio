@@ -9,6 +9,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   background-color: black;
 }
@@ -1484,7 +1488,7 @@ nav {
 
   .contact-section {
     margin: 5px 0px;
-    padding: 80px 0px;
+    padding: 80px 50px;
     color: white;
     text-align: center;
   }
