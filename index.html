@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baskar | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+  <div class="logo">
+    <a href="#hero"><h1>Portfolio.</h1></a>
+  </div>
+
+  <div class="nav-links" id="mainLinks">
+    <a href="#hero" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- ✅ New wrapper around resume + hamburger -->
+  <div class="nav-actions">
+    <div class="gradient-border nav-resume" id="resumeOutside">
+      <a href="./src/Baskar_Resume - Google Docs.pdf" target="_blank">
+        Resume <span><img src="./src/Icons/download.png" alt="404" /></span>
+      </a>
+    </div>
+
+    <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hero" onclick="toggleMenu()">Home</a>
+    <hr />
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <hr />
+    <a href="#skills" onclick="toggleMenu()">Skills</a>
+    <hr />
+    <a href="#projects" onclick="toggleMenu()">Projects</a>
+    <hr />
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+    <hr />
+    <div class="gradient-border inside-resume">
+      <a href="./src/Baskar_Resume - Google Docs.pdf" target="_blank">
+        Resume <span><img src="./src/Icons/download.png" alt="404" /></span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+    </header>
+
+    <section id="hero">
+      <div id="hero-container">
+        <div class="hero-section">
+          <p>Hi! my name is,</p>
+          <h1>Baskar.</h1>
+          <p>I'm a Fullstack Developer.</p>
+          <p>I create <span>Exciting Stuff</span> on the Internet.</p>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/Dev-Baskar"><img src="./src/Icons/Github.svg" alt="404" /></a>
+          <a href="https://www.linkedin.com/in/baskar-dev/"><img src="./src/Icons/Linkedin.svg" alt="404" /></a>
+          <a href="mailto:baskar13008@gmail.com" class="mail"><img src="./src/Icons/Gmail.svg" alt="404" /></a>
+          <a href="https://www.instagram.com/mgyt_boss/"><img src="./src/Icons/Instagram.svg" alt="404" /></a>
+        </div>
+
+        <div class="profile-section">
+          <div class="side-rotate"></div>
+          <div class="reverse"></div>
+          <div class="reverse-1"></div>
+          <div class="picture">
+            <img src="./src/profile/profile.jpg" alt="Profile Picture" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="section-header">
+        <h2>
+          <span class="arrow">&lt;</span> About Me
+          <span class="arrow">&gt;</span>
+        </h2>
+        <div class="horizontal-line"></div>
+      </div>
+
+      <div class="about-container">
+        <div class="about-image">
+          <img src="./src/profile/profile.jpg" alt="Developer Avatar" />
+        </div>
+        <div class="about-content">
+          <h3>Hey there! 👋</h3>
+          <p>
+            I'm Baskar, a full stack web developer with a strong passion for
+            crafting digital realms that captivate and inspire.
+          </p>
+          <p>
+            I specialize in creating dynamic and interactive UI/UX experience. I
+            stay up to date with the latest tools and techniques and worked on a
+            wide range of projects, from personal websites to large-scale
+            applications, sharpening my problem solving skills and fostering
+            creativity.
+          </p>
+          <p>
+            If you're seeking a dedicated and passionate web developer, I'm
+            eager to collaborate with you. Let's bring your ideas to life!
+          </p>
+        </div>
+        <div class="section-footer">
+          <h2>
+            <span class="foot">&lt;/</span> About Me
+            <span class="foot">&gt;</span>
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="tech-stack-section">
+      <div class="tech-section-header">
+        <div class="tech-stack-title">
+          <div class="line"></div>
+          <h2>
+            <span class="arrow">&lt;</span> Tech Stack
+            <span class="arrow">/&gt;</span>
+          </h2>
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <!-- Row 1 -->
+      <div class="tech-row">
+        <div class="tech-column center-grid">
+          <h3>Front-End <span class="arrow">( )</span></h3>
+          <div class="tech-grid">
+            <!-- Tech Items -->
+            <div class="tech-item">
+              <img src="./src/Icons/html.svg" alt="HTML" /><span>HTML</span>
+            </div>
+            <div class="tech-item">
+              <img src="./src/Icons/css.svg" alt="CSS" /><span> CSS </span>
+            </div>
+            <div class="tech-item">
+              <img src="./src/Icons/javascript.svg" alt="JavaScript" /><span
+                >JavaScript</span
+              >
+            </div>
+            <div class="tech-item">
+              <img src="./src/Icons/tailwind.svg" alt="Tailwind" /><span>Tailwind</span>
+            </div>
+            <div class="tech-item">
+              <img src="./src/Icons/reactjs.svg" alt="React" /><span>React.js</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-column center-grid">
+          <h3>Tech & Tools <span class="arrow">( )</span></h3>
+          <div class="tech-grid">
+            <!-- Tech Items -->
+            <div class="tech-item">
+              <img src="./src/Icons/git.svg" alt="Git" /><span>Git</span>
+            </div>
+            <div class="tech-item">
+              <img src="./src/Icons/Github.svg" alt="Github" /><span>GitHub</span>
+            </div>
+            <div class="tech-item">
+              <img src="./src/Icons/vscode.svg" alt="REST API" /><span>VS Code</span>
+            </div>
+            <div class="tech-item">
+              <img src="./src/Icons/figma.svg" alt="REST API" /><span>Figma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="tech-row center-grid">
+        <div class="tech-column">
+          <h3>Back-End <span class="arrow">( )</span></h3>
+          <div class="tech-grid">
+            <!-- Tech Items -->
+            <div class="tech-item">
+              <img src="./src/Icons/mysql.svg" alt="MySQL" /><span>MySQL</span>
+            </div>
+            <div class="tech-item">
+              <img src="./src/Icons/nodejs.svg" alt="Node.js" /><span>Node.js</span>
+            </div>
+            <div class="tech-item">
+              <img src="./src/Icons/database.svg" alt="REST API" /><span>REST API</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-column center-grid">
+          <h3>Programming <span class="arrow">( )</span></h3>
+          <div class="tech-grid">
+            <!-- Tech Items -->
+            <div class="tech-item">
+              <img src="./src/Icons/java.svg" alt="Java" /><span>Java</span>
+            </div>
+            <div class="tech-item">
+              <img src="./src/Icons/javascript.svg" alt="JavaScript" /><span
+                >JavaScript</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+  <div class="projects-header">
+    <h2><span class="arrow">&lt;</span> My Projects <span class="arrow">&gt;</span></h2>
+    <div class="horizontal-line"></div>
+  </div>
+
+  <div class="project-cards">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <img src="./src/proj-img/3.png" alt="Project ARMS" class="project-img" />
+
+      <a href="https://dev-baskar.github.io/Anraws-E-commerce/" target="_blank" class="external-link">
+        <img src="./src/Icons/up-right-from-square-solid.svg" alt="Visit Project">
+      </a>
+
+      <div class="project-content">
+        <h3>Anraws</h3>
+        <p>
+          An educational platform designed to empower students with easy access to study materials.
+        </p>
+        <div class="tech-icons">
+          <img src="./src/Icons/html.svg" alt="HTML" />
+          <img src="./src/Icons/css.svg" alt="CSS" />
+          <!-- <img src="typescript.svg" alt="TypeScript" /> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="./src/proj-img/2.png" alt="Project Vortexa" class="project-img" />
+
+      <a href="https://your-project-link.com" target="_blank" class="external-link">
+        <img src="./src/Icons/up-right-from-square-solid.svg" alt="Visit Project">
+      </a>
+
+      <div class="project-content">
+        <h3>Recuritment System <span class="dev-status">Under Development</span></h3>
+        <p>
+          Stay informed about weather, astronomy & forecasts with real-time insights.
+        </p>
+        <div class="tech-icons">
+          <img src="./src/Icons/html.svg" alt="HTML" />
+          <img src="./src/Icons/css.svg" alt="CSS" />
+          <img src="./src/Icons/javascript.svg" alt="JS" />
+          <img src="./src/Icons/mysql.svg" alt="MySQL" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <img src="./src/proj-img/Figma-project.png" alt="Project XRecon" class="project-img" />
+
+      <a href="https://www.figma.com/proto/XRkmJxoEl0wrlJMTpBErjp/Untitled?node-id=2-2&t=omVSOydOCy4zq9Cp-1" target="_blank" class="external-link">
+        <img src="./src/Icons/up-right-from-square-solid.svg" alt="Visit Project">
+      </a>
+
+      <div class="project-content">
+        <h3>Notify App (Prototype)</h3>
+        <p>
+          A chat app with real-time messaging, login/register features and secure backend.
+        </p>
+        <div class="tech-icons">
+          <img src="./src/Icons/figma.svg" alt="Figma" />
+        </div>
+      </div>
+  </div>
+  <div class="project-footer">
+          <h2>
+            <span class="foot">&lt;/</span> My Projects
+            <span class="foot">&gt;</span>
+          </h2>
+        </div>
+    </div>
+    
+  
+
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="contact-header">
+    <div class="tech-stack-title">
+      <div class="line"></div>
+    <h2><span class="arrow">&lt;</span> Contact <span class="arrow">/&gt;</span></h2>
+    <div class="line"></div>
+    </div>
+    <h3>Let's collaborate!</h3>
+    <p>
+      Contact me to discuss your web development needs<br>
+      or just to say hello. 😊
+    </p>
+  </div>
+
+  <div class="contact-container">
+    <div class="contact-left">
+      <div class="circle-social-wrapper">
+        <div class="social-circle">
+          <a href="https://github.com/Dev-Baskar" target="_blank"><img src="./src/Icons/Github.svg" alt="GitHub" /></a>
+          <a href="https://www.instagram.com/mgyt_boss/" target="_blank"><img src="./src/Icons/Instagram.svg" alt="Instagram" /></a>
+          <a href="https://www.linkedin.com/in/baskar-dev/" target="_blank"><img src="./src/Icons/Linkedin.svg" alt="LinkedIn" /></a>
+          <a href="mailto:baskar13008@gmail.com"><img src="./src/Icons/Gmail.svg" alt="Gmail" /></a>
+        </div>
+        <img src="./src/Logos/ContactVector.svg" alt="Contact Vector" class="contact-vector" />
+      </div>
+    
+    <div class="contact-form">
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your Name" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="example@gmail.com" />
+
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Enter your Message"></textarea>
+
+        <div class="form-actions">
+  <button type="submit" id="submitBtn">
+    Submit
+    <img src="./src/Icons/paper-plane-solid.svg" alt="Send" />
+  </button>
+  <span id="submitStatus" class="submit-status"></span>
+</div>
+
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-section">
+  <div class="wave-top">
+    <img src="./src/Logos/purpleWave.svg" alt="wave" />
+  </div>
+
+  <!-- Footer Content -->
+  <div class="footer-content">
+    <h1>B</h1>
+    <p>Baskar | Portfolio</p>
+    <div class="social-icons">
+      <a href="mailto:baskar13008@gmail.com" target="_blank"><img src="./src/Icons/Gmail.svg" alt="Mail" /></a>
+      <a href="https://www.instagram.com/mgyt_boss/" target="_blank"><img src="./src/Icons/Instagram.svg" alt="Instagram" /></a>
+      <a href="https://www.linkedin.com/in/baskar-dev/" target="_blank"><img src="./src/Icons/Linkedin.svg" alt="LinkedIn" /></a>
+      <a href="https://github.com/Dev-Baskar" target="_blank"><img src="./src/Icons/Github.svg" alt="GitHub" /></a>
+    </div>
+    <p class="copyright">© Copyright 2025 Baskar</p>
+  </div>
+</footer>
+<script>
+  const form = document.querySelector("form");
+  const submitBtn = document.getElementById("submitBtn");
+  const statusMsg = document.getElementById("submitStatus");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent actual form submit
+
+    // Start loading
+    submitBtn.classList.add("loading");
+    submitBtn.innerText = "Sending...";
+
+    // Simulate delay (e.g. network)
+    setTimeout(() => {
+      // Stop loading
+      submitBtn.classList.remove("loading");
+      submitBtn.innerHTML = `Submit <img src="./src/Icons/paper-plane-solid.svg" alt="Send" />`;
+
+      // Show success message
+      statusMsg.textContent = "👍 Message Sent!";
+
+      // Clear message after 4 seconds
+      setTimeout(() => {
+        statusMsg.textContent = "";
+      }, 4000);
+
+      // Optionally reset form fields
+      form.reset();
+    }, 2000); // Simulate 2 seconds loading
+  });
+</script>
+
+
+<script>
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.forEach(l => l.classList.remove("active"));
+      link.classList.add("active");
+    });
+  });
+</script>
+
+<script src="script.js"></script>
+  </body>
+</html>
