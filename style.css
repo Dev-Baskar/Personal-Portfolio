@@ -597,9 +597,19 @@ nav {
 }
 
 .projects-header h2 {
+  /* font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  color: white; */
   font-family: "Ubuntu", sans-serif;
   font-size: 2rem;
-  color: white;
+  font-weight: 600;
+  color: transparent;
+  background: linear-gradient(270deg, #5600bf, #9d00ff, #cc00fc, #fa00d0);
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: gradientAnimation 6s ease infinite;
+  white-space: nowrap;
 }
 
 .projects-header .arrow {
