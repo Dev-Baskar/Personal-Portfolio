@@ -657,9 +657,9 @@ nav {
 }
 
 .dev-status {
-  font-size: 0.8rem;
+  font-size: 12px;
+  display: block;
   color: orange;
-  margin-left: 10px;
   font-weight: 600;
 }
 
