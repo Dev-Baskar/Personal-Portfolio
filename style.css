@@ -767,6 +767,39 @@ nav {
   margin: 5px 0 40px 0;
 }
 
+.contact-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.contact-title .line {
+  flex-grow: 1;
+  height: 2px;
+  background: purple;
+  opacity: 0.6;
+}
+
+.contact-title h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: transparent;
+  background: linear-gradient(270deg, #5600bf, #9d00ff, #cc00fc, #fa00d0);
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: gradientAnimation 6s ease infinite;
+  white-space: nowrap;
+}
+
+.contact-title .arrow {
+  color: #a020f0;
+  font-weight: bold;
+}
+
 .contact-container {
   display: flex;
   align-items: center;
@@ -1439,6 +1472,7 @@ nav {
 
   .contact-header p {
     font-size: 14px !important;
+    margin:0 10px 20px 10px
   }
 
   .contact-container {
@@ -1482,6 +1516,10 @@ nav {
     align-items: center;
     margin: 0;
   }
+
+  .contact-title {
+    margin: 0 30px 40px 30px;
+}
 
   .contact-section {
     margin: 5px 0px;
