@@ -22,7 +22,6 @@
     <a href="#contact">Contact</a>
   </div>
 
-  <!-- ✅ New wrapper around resume + hamburger -->
   <div class="nav-actions">
     <div class="gradient-border nav-resume" id="resumeOutside">
       <a href="./src/Baskar_Resume - Google Docs.pdf" target="_blank">
@@ -295,9 +294,6 @@
           </h2>
         </div>
     </div>
-    
-  
-
 </section>
 
 <section id="contact" class="contact-section">
@@ -355,7 +351,6 @@
     <img src="./src/Logos/purpleWave.svg" alt="wave" />
   </div>
 
-  <!-- Footer Content -->
   <div class="footer-content">
     <h1>B</h1>
     <p>Baskar | Portfolio</p>
@@ -369,39 +364,31 @@
   </div>
 </footer>
 
-  
 <script>
   const form = document.querySelector("form");
   const submitBtn = document.getElementById("submitBtn");
   const statusMsg = document.getElementById("submitStatus");
 
   form.addEventListener("submit", function (e) {
-    e.preventDefault(); // Prevent actual form submit
+    e.preventDefault(); 
 
-    // Start loading
     submitBtn.classList.add("loading");
     submitBtn.innerText = "Sending...";
 
-    // Simulate delay (e.g. network)
     setTimeout(() => {
-      // Stop loading
       submitBtn.classList.remove("loading");
       submitBtn.innerHTML = `Submit <img src="./src/Icons/paper-plane-solid.svg" alt="Send" />`;
 
-      // Show success message
       statusMsg.textContent = "👍 Message Sent!";
 
-      // Clear message after 4 seconds
       setTimeout(() => {
         statusMsg.textContent = "";
       }, 4000);
 
-      // Optionally reset form fields
       form.reset();
-    }, 2000); // Simulate 2 seconds loading
+    }, 2000); 
   });
 </script>
-
 
 <script>
   const navLinks = document.querySelectorAll(".nav-links a");
