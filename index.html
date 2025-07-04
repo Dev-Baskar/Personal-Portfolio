@@ -323,25 +323,25 @@
       </div>
     
     <div class="contact-form">
-      <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Enter your Name" />
+      <form id="contactForm" method="post">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" placeholder="Enter your Name" required />
 
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="example@gmail.com" />
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" placeholder="example@gmail.com" required />
 
-        <label for="message">Message</label>
-        <textarea id="message" placeholder="Enter your Message"></textarea>
+  <label for="message">Message</label>
+  <textarea id="message" name="message" placeholder="Enter your Message" required></textarea>
 
-        <div class="form-actions">
-  <button type="submit" id="submitBtn">
-    Submit
-    <img src="./src/Icons/paper-plane-solid.svg" alt="Send" />
-  </button>
-  <span id="submitStatus" class="submit-status"></span>
-</div>
+  <div class="form-actions">
+    <button type="submit" id="submitBtn">
+      Submit
+      <img src="./src/Icons/paper-plane-solid.svg" alt="Send" />
+    </button>
+    <span id="submitStatus" class="submit-status"></span>
+  </div>
+</form>
 
-      </form>
     </div>
   </div>
 </section>
@@ -364,40 +364,12 @@
   </div>
 </footer>
 
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
-  const form = document.querySelector("form");
-  const submitBtn = document.getElementById("submitBtn");
-  const statusMsg = document.getElementById("submitStatus");
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault(); 
-
-    submitBtn.classList.add("loading");
-    submitBtn.innerText = "Sending...";
-
-    setTimeout(() => {
-      submitBtn.classList.remove("loading");
-      submitBtn.innerHTML = `Submit <img src="./src/Icons/paper-plane-solid.svg" alt="Send" />`;
-
-      statusMsg.textContent = "👍 Message Sent!";
-
-      setTimeout(() => {
-        statusMsg.textContent = "";
-      }, 4000);
-
-      form.reset();
-    }, 2000); 
-  });
+  (function(){
+    emailjs.init("MLZoQ4Nyhq7_XygOS"); // e.g., emailjs.init("0PxxxvH123abc");
+  })();
 </script>
-  const navLinks = document.querySelectorAll(".nav-links a");
-
-  navLinks.forEach(link => {
-    link.addEventListener("click", () => {
-      navLinks.forEach(l => l.classList.remove("active"));
-      link.classList.add("active");
-    });
-  });
-</script> -->
 
 <script src="script.js"></script>
   </body>
